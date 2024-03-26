@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="mygraph"
+      height="400px"
+      width="400px"
+      style="border: 1px solid red"
+    ></canvas>
+
+    <script>
+      let canvas = document.getElementById("mygraph");
+      let ctx = canvas.getContext("2d");
+
+      // ctx.beginPath();
+      // ctx.moveTo(0,0);
+      // ctx.lineTo(100,100);
+      // ctx.arc(200,200,100,0,360)
+      // ctx.fillStyle = "red";
+      // ctx.fillRect(0,0,200,200);
+
+      let ling = ctx.createRadialGradient(0, 0, 0, 200, 200, 100);
+      ling.addColorStop(0, "red");
+      ling.addColorStop(0.5, "yellow");
+      ling.addColorStop(1, "blue");
+
+      ctx.fillStyle = ling;
+      ctx.fillRect(0, 0, 200, 200);
+    </script>
+  </body>
+</html>

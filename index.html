@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="mygraph"
+      height="700px"
+      width="700px"
+      style="border: 1px solid red"
+    ></canvas>
+    <!-- <img src="https://www.w3schools.com/graphics/pic_the_scream.jpg" id="myimage" alt=""> -->
+
+    <script>
+      let canvas = document.getElementById("mygraph");
+      let ctx = canvas.getContext("2d");
+      //   document.getElementById("myimage").style.display= "none";
+      //   //Image
+      //   window.onload =function(){
+      //     document.getElementById("myimage").style.display= "block";
+
+      //       let img = document.getElementById("myimage");
+
+      //       ctx.drawImage(img,10,10);
+      //   }
+
+      //draw a line
+      ctx.moveTo(0, 100);
+      ctx.lineTo(100, 10);
+      ctx.lineWidth = 10;
+      ctx.strokeStyle = "red";
+      ctx.lineCap = "butt";
+      ctx.stroke();
+      //draw Reactangle
+      // ctx.fillStyle = "#000"
+      // ctx.fillRect(0,0,100,100)
+      //draw Circle
+      // ctx.beginPath();
+      // ctx.arc(100,100,90,0,360);
+
+      //Shapes
+      // ctx.beginPath();
+      // ctx.moveTo(100,200);
+      // ctx.lineTo(20,40);
+      // ctx.lineTo(20,40);
+      // ctx.lineTo(300,75);
+      // ctx.lineTo(100,200);
+      //   ctx.moveTo(20, 20);
+      //   ctx.lineTo(175, 20);
+      //   ctx.lineTo(175, 100);
+      //   ctx.lineTo(20, 100);
+      //   ctx.lineTo(20, 20);
+
+      //   // Define a triangle
+      //   ctx.moveTo(100, 20);
+      //   ctx.lineTo(175, 100);
+      //   ctx.lineTo(20, 100);
+      //   ctx.lineTo(100, 20);
+
+      //rectangle
+      //     ctx.rect(5,5,290,140)
+      //   ctx.stroke();
+      //     ctx.rect(30,30,50,50)
+      //   ctx.stroke();
+      //     ctx.rect(50,50,150,80)
+      //   ctx.stroke();
+
+      // linear gradient
+
+      // let ling = ctx.createLinearGradient(100,400,200,100);
+      // ling.addColorStop(0,"red");
+      // ling.addColorStop(1,"blue");
+
+      // ctx.fillStyle = ling;
+      // ctx.fillRect(0,0,200,200)
+
+      // radial gradient
+      // let ling = ctx.createRadialGradient(x,y,r,x1,y1,r1);
+      // ling.addColorStop(0,"red");
+      // ling.addColorStop(1,"blue");
+
+      // ctx.fillStyle = ling;
+      // ctx.fillRect(0,0,200,200)
+
+      // Text
+      // ctx.font="90px Comic Sans";
+      // ctx.textAlign= "center"
+      // ctx.strokeStyle = "red"
+      // ctx.strokeText("Hello World", canvas.width/3,canvas.height/3,100)
+      // ctx.fillText("Hello World",20,100)
+    </script>
+  </body>
+</html>
